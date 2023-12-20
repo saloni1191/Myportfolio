@@ -1,0 +1,699 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Your site's title should be here</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Your site's description should be here">
+    <meta name="keywords" content="Your site's keywords should be here">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="style1.css"> 
+    <!--[if IE 6]>
+	<style type="text/css">
+		* html .group {
+			height: 1%;
+		}
+	</style>
+  <![endif]--> 
+    <!--[if IE 7]>
+	<style type="text/css">
+		*:first-child+html .group {
+			min-height: 1px;
+		}
+	</style>
+  <![endif]--> 
+    <!--[if lt IE 9]> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> 
+  <![endif]--> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rasa:300,regular,500,600,700&amp;subset=gujarati,latin,latin-ext">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js1/match-height.js"></script> 
+    <script>
+		$(function () {
+			$('.match-height-bootstrap-row > * > *').matchHeight();
+			$('.match-height > *').matchHeight();
+		})
+	</script>
+	<style>
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+display: flex;
+  flex-wrap: wrap;
+  margin: 5px 80px;
+  float: center;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 8px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: flex;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  left: 25px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.images {
+display: flex;
+width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+ 
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.images img:hover {
+  transform: scale(0.9);
+}
+.images div {
+  position: relative;
+}
+.images div span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.modal {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+  display: none;
+  place-items: center;
+  color: #fff;
+}
+.close {
+  position: absolute;
+  top: 1em;
+  right: 1.5em;
+  font-size: 25px;
+  cursor: pointer;
+}
+.modal-content {
+  position:static;
+  min-height: 800px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-content img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.modal-content img.show {
+  opacity: 1;
+}
+.modal-txt {
+  font-size: 20px;
+  padding: 10px 5px;
+}
+
+.modal-nav {
+  padding: 10px 5px;
+}
+
+.modal-nav button {
+  padding: 5px;
+  width: 100px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.modal-nav button:hover {
+  background-color: teal;
+}
+
+.show {
+  display:grid;
+}
+</style>
+  </head>
+  <body>
+    <div class="artboard-2">
+      <div class="l-unconstrained">
+        <div class="l-constrained">
+          <div class="header group">
+            <div class="ellipse-1"></div>
+            <a href="Home.html" class="home">Home</a>
+            <a href="aboutme.html" class="text">About Me</a>
+            <a href="mywork.html" class="text-2">My Work</a>
+            <a href="contact.html" class="contact">Contact</a>
+            <div class="rectangle-2-copy-holder">
+              <input type="button" onclick="alert('Hello World!')" style="background-color:#e0dfe0" value="Search">
+            </div>
+            <div class="rectangle-2-holder group">
+              <img class="search" src="images/search.png" alt="" width="17" height="17">
+             <input type="text" style="background-color:#e0dfe0" class="text-3" placeholder="Search here...">
+            </div>
+          </div>
+		   <div class="aboutme group">
+            <div class="about-me">
+              <p class="text-4"><a href="#">Portfolio</a></p>
+          </div>
+		  </div>
+		  <br>
+		  <!-- MAIN (Center website) -->
+
+<div id="myBtnContainer">
+  <button class="btn active" id="" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" id="bs" onclick="filterSelection('bs')"> Business Posts</button>
+  <button class="btn" id="fs" onclick="filterSelection('fs')"> Festival Posts</button>
+  <button class="btn" id="sp" onclick="filterSelection('sp')"> Social Media Posts</button>
+   <button class="btn" onclick="filterSelection('Sd')"> Stationery Design</button>
+    <button class="btn" onclick="filterSelection('Wd')"> Website Desigs</button>
+	 <button class="btn" onclick="filterSelection('Ld')">Logo Design</button>
+</div>
+<!-- Portfolio Gallery Grid -->
+
+
+<div class="row">
+<div class="images">
+  <div class="column bs">
+    <div class="content">
+	
+      <img id="myImg" src="images/image.png" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+   <div class="column bs">
+    <div class="content">
+    <img id="myImg" src="images/image3.png" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+   <div class="column bs">
+    <div class="content">
+    <img id="myImg" src="images/image2.png" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+   <div class="column bs">
+    <div class="content">
+    <img id="myImg" src="images/image4.jpg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+   <div class="column bs">
+    <div class="content">
+    <img id="myImg" src="images/image5.jpg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+   <div class="column bs">
+    <div class="content">
+    <img id="myImg" src="images/image16.png" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+   <div class="column bs">
+    <div class="content">
+    <img id="myImg" src="images/image50.png" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+   <div class="column bs">
+    <div class="content">
+    <img id="myImg" src="images/image52.jpg" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="column fs">
+    <div class="content">
+      <img id="myImg" src="images/image6.jpg" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column fs">
+    <div class="content">
+   <img id="myImg" src="images/image7.jpg" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column fs">
+    <div class="content">
+    <img id="myImg" src="images/image8.jpg" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column fs">
+    <div class="content">
+    <img id="myImg" src="images/image9.jpg" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column fs">
+    <div class="content">
+    <img id="myImg" src="images/image10.jpg" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column fs">
+    <div class="content">
+    <img id="myImg" src="images/image51.jpg" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img  id="myImg"src="images/image17.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column sp">
+    <div class="content">
+      <img id="myImg" src="images/image11.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image12.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image13.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image14.png" alt="Car" style="width:100%">
+    </div>
+	</div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image15.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image19.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image21.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image23.png" alt="Car" style="width:100%">
+    </div>
+  </div><div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image25.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image27.png" alt="Car" style="width:100%">
+    </div>
+  </div><div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image29.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image33.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image35.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image36.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image37.png" alt="Car" style="width:100%">
+    </div>
+  </div><div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image38.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image39.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image40.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image41.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image42.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image43.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image45.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image46.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image48.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image47.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image49.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image18.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image20.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image22.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image24.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image26.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image28.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image30.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image31.png" alt="Car" style="width:100%">
+    </div>
+  </div><div class="column sp">
+    <div class="content">
+    <img id="myImg" src="images/image32.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  
+  <div class="column Sd">
+    <div class="content">
+    <img id="myImg" src="images/image55.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column Sd">
+    <div class="content">
+    <img id="myImg" src="images/image56.png" alt="Car" style="width:100%">
+    </div>
+  </div><div class="column Sd">
+    <div class="content">
+    <img id="myImg" src="images/image53.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column Wd">
+    <div class="content">
+    <img id="myImg" src="images/image54.jpg" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column Wd">
+    <div class="content">
+    <img id="myImg" src="images/image57.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column Ld">
+    <div class="content">
+    <img id="myImg" src="images/image58.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column Ld">
+    <div class="content">
+    <img id="myImg" src="images/image59.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column Ld">
+    <div class="content">
+    <img id="myImg" src="images/image60.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+</div>
+<div class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <img src="images/2.jpg" alt="" class="modal-img" />
+        <div class="modal-nav">
+          <button type="button" class="btnPrev">&#10094</button>
+          <button type="button" class="btnNext">&#10095;</button>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>  
+<script src="https://kit.fontawesome.com/7368c40b21.js" crossorigin="anonymous" ></script>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+document.addEventListener("DOMContentLoaded", function () {
+  const images = document.querySelectorAll(".images img");
+  const modal = document.querySelector(".modal");
+  const modalImg = document.querySelector(".modal-img");
+  const modalTxt = document.querySelector(".modal-txt");
+  const closebtn = document.querySelector(".close");
+  let currentIndex = 0;
+
+  const prevBtn = document.querySelector(".btnPrev");
+  const nextBtn = document.querySelector(".btnNext");
+
+  //Add Click Event for All Images
+  images.forEach((image, index) => {
+    image.addEventListener("click", function () {
+      currentIndex = index;
+      updateModalContent();
+      modal.classList.add("show");
+    });
+  });
+
+  //Update Image in Modal
+  function updateModalContent() {
+    const image = images[currentIndex];
+    modalImg.classList.remove("show");
+    setTimeout(() => {
+      modalImg.src = image.src;
+      modalImg.classList.add("show");
+    }, 300);
+  }
+
+  //Next button onclick
+  nextBtn.addEventListener("click", function () {
+    currentIndex = currentIndex + 1 >= images.length ? 0 : currentIndex + 1;
+    updateModalContent();
+  });
+
+  //Previous button onclick
+  prevBtn.addEventListener("click", function () {
+    currentIndex = currentIndex - 1 < 0 ? images.length - 1 : currentIndex - 1;
+    updateModalContent();
+  });
+
+  //Code for Close Icon
+  closebtn.addEventListener("click", function () {
+    modal.classList.remove("show");
+  });
+});
+</script>
+<div class="contact-me">
+        <div class="l-constrained-2">
+          <p class="text-23"><a href="#">Contact Me</a></p>
+          <div class="row-4 group">
+            <img class="layer-3" src="images/layer_3.png" alt="" width="25" height="25">
+            <a href="mailto: saloninathani11@gmail.com"><p class="text-24">saloninathani11@gmail.com</p></a>
+          </div>
+          <div class="row-5 group">
+            <img class="layer-4" src="images/layer_4.png" alt="" width="25" height="26">
+            <a href="tel: +918108646123"><p class="text-25">+918108646123</p></a>
+          </div>
+          <div class="wrapper-12 group">
+            <img class="layer-2" src="images/layer_2.png" alt="" width="26" height="26">
+            <a href="https://maps.app.goo.gl/2GMNBKvMYutZ3gUg8"><p class="text-26">Nathani Street, Junavas,Maska, Ta- Mandvi Kutch-370465</p></a>
+            <p class="text-27">Let's get in touch. Send me a message:</p>
+          </div>
+          <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://script.google.com/macros/s/AKfycbyuXu66PRlfUWujejVX0gozyqiX8euhSx-E5eb7qdmeXlnBR7DMYJHeu_ncDkeQ7cK4/exec',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+		 window.location = "myworkall.html";
+          alert("Your Message is Send")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+  <div class="row-9 match-height group">
+  <form id="myForm">
+  <div class="rectangle-5-holder">
+    <input name="Name" style="background-color:#e0dfe0" placeholder="Name" />
+	</div>
+	<div class="rectangle-5-copy-3-holder">
+    <input name="Email" style="background-color:#e0dfe0" placeholder="Email"/>
+	</div>
+	</div>
+	<div class="rectangle-5-copy-holder">
+    <textarea name="Message" style="background-color:#e0dfe0" placeholder="Message" required></textarea>
+</div>
+	<div class="row-10 match-height group">
+            <div class="rectangle-5-copy-2-holder">
+	<input name="Contact No." style="background-color:#e0dfe0" placeholder="Contact No." />
+	</div>
+  </form>
+  <div >
+  <button class="button" onclick="SubForm()"><img class="send-message" src="images/send-message.png">Send Message</button>
+  </div>
+  </div>
+        </div>
+      </div>
+		</div>
+	  </div>
+    </div>

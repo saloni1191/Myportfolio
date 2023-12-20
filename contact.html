@@ -1,0 +1,272 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Your site's title should be here</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Your site's description should be here">
+    <meta name="keywords" content="Your site's keywords should be here">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="style3.css"> 
+    <!--[if IE 6]>
+	<style type="text/css">
+		* html .group {
+			height: 1%;
+		}
+	</style>
+  <![endif]--> 
+    <!--[if IE 7]>
+	<style type="text/css">
+		*:first-child+html .group {
+			min-height: 1px;
+		}
+	</style>
+  <![endif]--> 
+    <!--[if lt IE 9]> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script> 
+  <![endif]--> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rasa:300,regular,500,600,700&amp;subset=gujarati,latin,latin-ext">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js3/match-height.js"></script> 
+    <script>
+		$(function () {
+			$('.match-height-bootstrap-row > * > *').matchHeight();
+			$('.match-height > *').matchHeight();
+		})
+	</script>
+  </head>
+  <body>
+    <div class="artboard-4">
+      <div class="col">
+        <div class="l-constrained-2">
+          <div class="header group">
+            <div class="ellipse-1"></div>
+            <a href="Home.html" class="home">Home</a>
+            <a href="aboutme.html" class="text">About Me</a>
+            <a href="myworkall.html" class="text-2">My Work</a>
+            <a href="contact.html" class="contact">Contact</a>
+            <div class="rectangle-2-copy-holder">
+             <input type="button" onclick="alert('Hello World!')" style="background-color:#e0dfe0" value="Search">
+            </div>
+            <div class="rectangle-2-holder group">
+              <img class="search" src="images/search.png" alt="" width="17" height="17">
+               <input type="text" style="background-color:#e0dfe0" hieght="29px" width="301px" class="text-3" placeholder="Search here...">
+            </div>
+          </div>
+          <p class="text-4"><a href="#">Contact Me</a></p>
+        </div>
+      </div>
+      <div class="l-unconstrained">
+        <div class="l-constrained">
+          <div class="row-3 group">
+            <p class="text-5">Use this form to get<br>in touch with Me:</p>
+            <div class="col-2">
+              <p class="text-6"><a href="#">Get in Touch</a></p>
+			  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://script.google.com/macros/s/AKfycbyuXu66PRlfUWujejVX0gozyqiX8euhSx-E5eb7qdmeXlnBR7DMYJHeu_ncDkeQ7cK4/exec',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+		 window.location = "contact.html";
+          alert("Your Message is Send")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+  <form id="myForm">
+			  <div class="group-5 match-height group">
+              <div class="rectangle-10-holder">
+               <input  name="Name" placeholder="Name"/>
+              </div>
+              
+                <div class="rectangle-10-copy-holder">
+                  <p class="email"><input name="Email" placeholder="Email"/></p>
+                </div>
+                <div class="rectangle-10-copy-2-holder">
+                  <input name="Contact No." placeholder="Contact No." />
+                </div>
+              </div>
+              <div class="rectangle-10-copy-3-holder">
+                 <input name="Subject" placeholder="Suject"/>
+              </div>
+              <div class="rectangle-10-copy-4-holder">
+                  <textarea name="Message" placeholder="Your Message" /></textarea>
+              </div>
+			  </form>
+			  <div>
+               <button class="button" onclick="SubForm()">Send Message</button>
+			   </div>
+            </div>
+          </div>
+          <div class="group-7 group">
+		  <p class="text-9"><a href="#">My Work</a></p>
+           <style media="screen">
+
+
+#slider1 {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 25px 390px;
+  font-family: 'Helvetica Neue', sans-serif;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+input[type=radio] {
+  position: relative;
+  top: 108%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  margin: 0 15px 0 0;
+  opacity: 0.4;
+  transform: translateX(-83px);
+  cursor: pointer;
+  accent-color: black;
+   border-radius:50%;
+}
+
+
+input[type=radio]:nth-child(10) {
+  margin-right: 0px;
+}
+
+input[type=radio]:checked {
+  opacity: 1;
+  background-color: black;
+}
+
+
+
+
+#slider1 label,
+#slider1 label img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 500ms ease;
+}
+
+
+
+/* Slider Functionality */
+
+/* Active Slide */
+#s6:checked ~ #slide6,
+ #s7:checked ~ #slide7,
+  #s8:checked ~ #slide8,
+   #s9:checked ~ #slide9,
+    #s10:checked ~ #slide10 {
+  box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
+  transform: translate3d(0%, 0, 0px);
+}
+
+/* Next Slide */
+#s6:checked ~ #slide7,
+ #s7:checked ~ #slide8,
+  #s8:checked ~ #slide9,
+   #s9:checked ~ #slide10,
+    #s10:checked ~ #slide6 {
+  box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+  transform: translate3d(100%, 0, -500px);
+}
+
+
+/* Next to Next Slide */
+#s6:checked ~ #slide8,
+ #s7:checked ~ #slide9,
+  #s8:checked ~ #slide10,
+   #s9:checked ~ #slide6,
+    #s10:checked ~ #slide7 {
+  box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+  transform: translate3d(200%, 0, -1000px);
+}
+
+/* Previous to Previous Slide */
+#s6:checked ~ #slide9,
+ #s7:checked ~ #slide10,
+  #s8:checked ~ #slide6,
+   #s9:checked ~ #slide7,
+    #s10:checked ~ #slide8 {
+  box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+  transform: translate3d(-200%, 0, -1000px);
+}
+
+/* Previous Slide */
+#s6:checked ~ #slide10,
+ #s7:checked ~ #slide6,
+  #s8:checked ~ #slide7,
+   #s9:checked ~ #slide8,
+    #s10:checked ~ #slide9 {
+  box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+  transform: translate3d(-100%, 0, -500px);
+}
+
+
+  </style>
+<section id="slider1">
+  <input type="radio" name="slider1" id="s6" checked>
+  <input type="radio" name="slider1" id="s7">
+  <input type="radio" name="slider1" id="s8">
+  <input type="radio" name="slider1" id="s9">
+  <input type="radio" name="slider1" id="s10">
+
+  <label for="s6" id="slide6"><img src="images/image6.jpg" alt=""></label>
+  <label for="s7" id="slide7"><img src="images/image7.jpg" alt=""></label>
+  <label for="s8" id="slide8"><img src="images/image8.jpg" alt=""></label>
+  <label for="s9" id="slide9"><img src="images/image9.jpg" alt=""></label>
+  <label for="s10" id="slide10"><img src="images/image10.jpg" alt=""></label>
+</section>   
+                      
+                      </div>
+					  <div class="rectangle-1-copy-holder">
+              <a href="myworkall.html">View All</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-me">
+        <div class="l-constrained-3">
+          <div class="wrapper-6 group">
+            <p class="text-11"><a href="#">Contact Me</a></p>
+            <img class="layer-3" src="images/layer_3.png" alt="" width="25" height="25">
+            <a href="mailto: saloninathani11@gmail.com"><p>saloninathani11@gmail.com</p></a>
+          </div>
+          <div class="row-4 group">
+            <img class="layer-4" src="images/layer_4.png" alt="" width="25" height="26">
+            <a href="tel: +918108646123"><p class="text-13">+918108646123</p></a>
+          </div>
+          <div class="wrapper-7 group">
+            <img class="layer-2" src="images/layer_2.png" alt="" width="26" height="26">
+            <a href="https://maps.app.goo.gl/2GMNBKvMYutZ3gUg8"><p class="text-15">Nathani Street, Junavas,Maska, Ta- Mandvi Kutch-370465</p></a>
+            <p class="text-14">Social Media</p>
+          </div>
+          <div class="row group">
+            <a href="https://wa.me/8108646123"><img src="images/whatsapp.png" alt="" width="66" height="66"></a>
+            <a href="https://www.instagram.com/saloni_1191"><img src="images/instagram.png" alt="" width="66" height="66"></a>
+            <a href="https://www.linkedin.com/in/saloni1191"><img src="images/linkedin.png" alt="" width="66" height="66"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
